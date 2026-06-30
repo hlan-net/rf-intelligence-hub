@@ -49,8 +49,10 @@ Decision criteria from dev platform: sustained token/s at acceptable power draw,
 |---|---|---|
 | BLE 5 | nRF52840 or u-blox NINA-B3 | Passive advertisement scanning |
 | WiFi 6 + 802.15.4 (Zigbee/Thread) + BLE | ESP32-C6 | 2.4 GHz only — single chip simplifies RF layout |
+| GNSS (GPS/Galileo/GLONASS) | L80-M39 or similar low-power module | Strictly for offline RTC time sync. Location logging is opt-in (GDPR constraint). |
 
 **Correction / open scope:** the ESP32-C6 has **no sub-GHz radio** — it is 2.4 GHz
+
 only. The earlier "sub-GHz" attribution was an error. Sub-GHz (433/868 MHz)
 reception would require a separate front-end (e.g. CC1101) and carries elevated
 legal exposure — see [`../docs/legal_privacy.md`](../docs/legal_privacy.md) §5 and
@@ -187,9 +189,11 @@ analysis and threat model: [`security.md`](security.md).
 | Supercap sizing (Farads) | Peak current spike measurement | Rev 0 validation |
 | Secure element part (ATECC608B / SE050 / OPTIGA / TPM 2.0) | Compute SoC class (Linux vs MCU) | Post SoC decision |
 | Sub-GHz (433/868 MHz) in scope? | Legal scope + value assessment | Pre-schematic |
+| GNSS receiver for offline time sync | Evaluate power budget and chip selection (e.g., L80-M39 or similar low-power I2C/UART GNSS) | Pre-schematic |
 
 *Note:* presence of a dedicated secure element (storage + TRNG) is **locked** — see
 §2.7; only the specific part is open.
+
 
 ---
 

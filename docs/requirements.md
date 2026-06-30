@@ -11,8 +11,11 @@
 > - device hardware/power/RF/security/PCB → [`../spec/device.md`](../spec/device.md)
 > - ratified rules → [`../spec/design_principles.md`](../spec/design_principles.md)
 > - security architecture → [`../spec/security.md`](../spec/security.md)
->
 > Legal/privacy background: [`legal_privacy.md`](legal_privacy.md), [`gdpr.md`](gdpr.md).
+> Background on Flipper One comparison: [`flipper_one.md`](flipper_one.md).
+> GNSS & time synchronization: [`gnss.md`](gnss.md).
+
+
 
 ---
 

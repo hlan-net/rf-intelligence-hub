@@ -33,6 +33,10 @@ designs, firmware, the companion app, and documentation.
 - [Project requirements (overview)](docs/requirements.md) — overview, AI, app, cloud
 - [Legal & privacy overview](docs/legal_privacy.md) — the three legal regimes that apply
 - [GDPR design notes](docs/gdpr.md) — detailed data-protection analysis and decisions
+- [Flipper One comparison](docs/flipper_one.md) — how this project compares to Flipper One
+- [GNSS & time synchronization](docs/gnss.md) — offline RTC time sync and privacy notes
+
+
 
 ## Design philosophy
 
